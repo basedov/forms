@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="forms.css">
+    <title>Forms</title>
+    <style>
+        .cb{
+            width: 20px;
+            height: 20px;
+        }
+
+        form{
+            font-size: 40px;
+        }
+
+        .gen{
+            transform: scale(1.3);
+        }
+
+        .subres{
+            transform: scale(1.3);
+        }
+    </style>
+</head>
+<body>
+    <form action=" " name="form1">
+        <label for="fname">Enter your name</label>
+        <input type="text" name="fname" size="16" maxlength="12" value="enter your name"><br>
+        <label for="password">Enter your password</label>
+        <input type="password" name="password" size="16" maxlength="12" value="enter your password">
+        <label for=""><br>Choose your languge
+            <input type="checkbox" name="lang1" value="english" class="cb">english
+            <input type="checkbox" name="lang2" value="french" class="cb">french
+            <input type="checkbox" name="lang3" value="chinese" class="cb">chinese
+        </label>
+        <br>
+        <label>Choose your gender
+            <input type="radio" name="gender" value="male" class="gen">male
+            <input type="radio" name="gender" value="female" class="gen">female
+        </label>
+<br><label for="game">Choose yourfavorite game
+   <select name="game" id="game">
+   <option value="*1*">Dota2</option>
+   <option value="*1*">Counter Strike</option>
+   <option value="*1*">League of Legends</option>
+   <option value="*1*">Tekken 7</option>
+   <option value="*1*">Mortal Kombat 11</option>
+</label>
+</select>
+    
+<br>
+<input type="submit" value="Submit" class="subres">Submit
+<input type="reset" value="Reset" class="subres"> Reset
+</form>
+</body>
+</html>
